@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom color classes for consistent theming */
+@layer components {
+  /* Text Colors */
+  .text-primary-dark {
+    @apply text-gray-900;
+  }
+
+  .text-secondary {
+    @apply text-gray-600;
+  }
+
+  .text-muted {
+    @apply text-gray-500;
+  }
+
+  .text-light {
+    @apply text-gray-400;
+  }
+
+  .text-brand {
+    @apply text-blue-600;
+  }
+
+  .text-white-primary {
+    @apply text-white;
+  }
+
+  /* Background Colors */
+  .bg-primary {
+    @apply bg-blue-600;
+  }
+
+  .bg-primary-hover {
+    @apply hover:bg-blue-700;
+  }
+  .bg-light {
+    @apply bg-gray-50;
+  }
+
+  .bg-dark {
+    @apply bg-gray-900;
+  }
+  .bg-accent {
+    @apply bg-blue-100;
+  }
+
+  /* Border Colors */
+  .border-light {
+    @apply border-gray-100;
+  }
+
+  .border-muted {
+    @apply border-gray-300;
+  }
+
+  /* Hover States */
+  .hover-primary {
+    @apply hover:text-gray-900;
+  }
+
+  .hover-brand {
+    @apply hover:text-blue-600;
+  }
+
+  /* Component Styles */
+  .nav-link {
+    @apply text-secondary hover-primary transition-colors;
+  }
+
+  .nav-link-active {
+    @apply text-primary-dark font-medium;
+  }
+
+  .heading-primary {
+    @apply text-primary-dark;
+  }
+
+  .heading-secondary {
+    @apply text-secondary;
+  }
+
+  .btn-primary {
+    @apply bg-primary bg-primary-hover text-white-primary;
+  }
+
+  .btn-outline-white {
+    @apply border-white text-white-primary hover:bg-white hover:text-gray-900 bg-transparent;
+  }
+
+  .card-title {
+    @apply text-primary-dark font-semibold;
+  }
+
+  .footer-heading {
+    @apply text-primary-dark font-semibold;
+  }
+
+  .footer-text {
+    @apply text-secondary;
+  }
+
+  .footer-link {
+    @apply text-secondary hover-primary;
+  }
+
+  /* Card Colors */
+  .card-bg {
+    @apply bg-white;
+  }
+
+  .card-border {
+    @apply border border-gray-200;
+  }
+
+  .card-shadow {
+    @apply shadow-md hover:shadow-lg;
+  }
+
+  /* Price Badge */
+  .price-badge {
+    @apply bg-blue-600 text-white;
+  }
+
+  .price-badge-alt {
+    @apply bg-white/95 backdrop-blur-sm text-gray-900 border border-gray-200;
+  }
+
+  /* Icon Circles */
+  .icon-circle {
+    @apply bg-blue-50 border border-blue-100;
+  }
+
+  .icon-circle-hover {
+    @apply group-hover:bg-blue-100 group-hover:border-blue-200;
+  }
+
+  .icon-circle-large {
+    @apply bg-blue-50 border-2 border-blue-100;
+  }
+
+  .icon-circle-large-hover {
+    @apply group-hover:bg-blue-100 group-hover:border-blue-200;
+  }
+
+  /* Contact Card Icons */
+  .contact-icon-circle {
+    @apply bg-blue-600 border border-blue-700;
+  }
+
+  /* Feature Icons */
+  .feature-icon {
+    @apply text-blue-700;
+  }
+
+  .input-base {
+  @apply w-full px-4 py-3 border border-muted rounded-lg bg-white dark:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+}
