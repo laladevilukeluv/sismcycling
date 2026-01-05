@@ -176,9 +176,9 @@ export default function ContactPage() {
                       <div>
                         <h3 className="card-title mb-2">{t("contact.info.address")}</h3>
                         <p className="text-secondary">
-                          〒880-0121
+                          〒880-0000
                           <br />
-                          宮崎県宮崎市島之内5621-8
+                          宮崎県宮崎市
                           <br />
                           日本
                         </p>
@@ -196,7 +196,7 @@ export default function ContactPage() {
                         <h3 className="card-title mb-2">{t("contact.info.phone")}</h3>
                         <p className="text-secondary">
                           <a href="tel:+81-90-7292-4723" className="hover-brand">
-                            (090)7292-4723
+                            (000)1234-4723
                           </a>
                         </p>
                       </div>
