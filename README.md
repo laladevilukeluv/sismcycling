@@ -5,7 +5,7 @@
 React / Next.js を用いて、シンプルで見やすい構成を意識して実装しました。
 
 ## Demo
-https://v0-deploy-to-vercel-rho-six.vercel.app/
+https://sismcycling.vercel.app/
 
 ## Tech Stack
 - TypeScript
